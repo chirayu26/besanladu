@@ -17,22 +17,30 @@
             box-sizing: border-box;
         }
 
-        body {
-            font-family: 'Outfit', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(-45deg, #2b0b30, #61184c, #9c2162, #ff275d, #ffdf85);
-            background-size: 400% 400%;
-            animation: gradientBG 15s ease infinite;
-            color: #fff;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-            perspective: 1000px;
-        }
+        body 
+        
+            {
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    padding: 0;
 
+    background:
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url('background.jpeg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    perspective: 1000px;
+}
         /* Smooth animated gradient background */
         @keyframes gradientBG {
             0% {
